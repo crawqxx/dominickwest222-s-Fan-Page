@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>dominickwest222's Fan Page</title>
+    <link rel="icon" href="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-3138A3CB6E42F0ED1733D0A6E1BC9838-Png/150/150/AvatarHeadshot/Webp/noFilter" type="image/png">
+    <style>
+.container {
+    display: flex;
+    width: 100%; /* Allow it to take the full width */
+    max-width: 1400px; /* Set a maximum width */
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-top: 80px;
+    backdrop-filter: blur(0px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0);
+    padding: 0 10px;
+    background: none;
+}
+
+.left, .center, .right {
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    flex: 1; /* Allow sections to grow and shrink */
+}
+
+.left {
+    flex-basis: 40%; /* Set base size for left section */
+}
+
+.center {
+    flex-basis: 70%; /* Set base size for center section */
+}
+
+.right {
+    flex-basis: 40%;
+    display: flex; /* Enable Flexbox */
+    flex-direction: column; /* Arrange items in a column */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+}
+
+        .user-info {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .profile-pic {
+            border-radius: 10px;
+            max-width: 70px;
+            height: 60px;
+            margin-right: 20px;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+
+        .full-skin-pic {
+            align-self: center;
+            max-width: 80%;
+            height: auto;
+            border-radius: 10px;
+            margin: 0 auto;
+        }
+
+        .gray-text {
+            color: gray; /* Gray color for currently offline text */
+        }
+
+        @media (max-width: 768px) {
+    .container {
+        min-width: 0px;
+        flex-direction: column;
+        align-items: center;
+        backdrop-filter: blur(10px);
+        width: 100%;
+        padding: 0;
+        margin-top: 60px;
+    }
+
+    .navbar-buttons {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .navbar-button {
+        margin: 5px 0;
+        font-size: 16px;
+        padding: 10px;
+        width: calc(100% - 20px);
+        box-sizing: border-box;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.2);
+        transition: background-color 0.3s;
+    }
+
+    .navbar-button:hover {
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="navbar">
+        <h1>dominickwest222's Fan Page</h1>
+        <button class="navbar-toggle" onclick="toggleNavbar()">☰</button>
+    </div>
+    <button class="mobile-menu-button" onclick="toggleNavbar()">☰</button>
+    
+
+    <div class="navbar-buttons" id="navbarButtons">
+        <a href="index.html" class="navbar-button">Home</a>
+        <a href="history.html" class="navbar-button">History of dominickwest222</a>
+        <a href="why.html" class="navbar-button">Why I created this</a>
+    </div>
+
+    <div class="container">
+        <div class="left">
+            <div class="user-info">
+                <img src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-3138A3CB6E42F0ED1733D0A6E1BC9838-Png/150/150/AvatarHeadshot/Webp/noFilter" alt="Player Profile Picture" class="profile-pic">
+                <div class="info">
+                    <h2>Player Information</h2>
+                    <p><strong>Username:</strong> dominickwest222</p>
+                    <p><strong>Last Online:</strong> 24 November 2021</p>
+                    <p><strong>Friends:</strong> 4</p>
+                    <p class="gray-text"><strong>• Currently Offline</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="center">
+            <h2 style="text-align: center;">Who is dominickwest222?</h2>
+            <p style="text-align: center;">Dominickwest222 is a Roblox user whose account was created on November 25, 2021. Interestingly, the last recorded activity on the account was also on that same day, suggesting a brief initial foray into the platform. Despite being online only once, Dominickwest222 established connections with four friends: babymay2720, chrisqwerty056, JJgachalife8, and serenitypurms. These usernames hint at a diverse range of interests within the Roblox community.</p>
+            <p style="text-align: center;">With zero place visits logged, it appears that this user did not extensively explore the games and experiences that Roblox offers. The inventory remains hidden, leaving speculation about what items or creations might exist within it. This mystery adds a layer of intrigue to the account, as it raises questions about the user's intentions and potential future activity.</p>
+            <p style="text-align: center;">Roblox is known for its vibrant community, where players build friendships and share adventures, and Dominickwest222's account reflects this social aspect. Even in limited engagement, the presence of friends indicates a desire for connection. While the journey of Dominickwest222 may have started quietly, it serves as a reminder of the many stories and possibilities that exist within the expansive world of Roblox. Who knows what adventures await if this user decides to return?</p>
+        </div>
+
+        <div class="right">
+            <img src="https://tr.rbxcdn.com/30DAY-Avatar-3138A3CB6E42F0ED1733D0A6E1BC9838-Png/352/352/Avatar/Webp/noFilter" alt="Full Profile Skin" class="full-skin-pic">
+            <div class="about-skin">
+                <h2>About His Skin:</h2>
+                <p>very beautiful 1000000000</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+function toggleNavbar() {
+    const navbarButtons = document.getElementById('navbarButtons');
+    const mobileMenuButton = document.querySelector('.mobile-menu-button');
+
+    if (navbarButtons.classList.contains('active')) {
+        navbarButtons.classList.remove('active');
+        mobileMenuButton.style.left = '20px'; // Reset position
+    } else {
+        navbarButtons.classList.add('active');
+        mobileMenuButton.style.left = 'calc(20px + 220px)'; // Move it to the right
+    }
+}
+    </script>
+</body>
+</html>

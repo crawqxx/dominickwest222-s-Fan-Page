@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>dominickwest222's Fan Page</title>
+    <link rel="icon" href="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-3138A3CB6E42F0ED1733D0A6E1BC9838-Png/150/150/AvatarHeadshot/Webp/noFilter" type="image/png">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="navbar">
+        <h1>dominickwest222's Fan Page</h1>
+        <button class="navbar-toggle" onclick="toggleNavbar()">☰</button>
+    </div>
+    <button class="mobile-menu-button" onclick="toggleNavbar()">☰</button>
+
+    <div class="navbar-buttons" id="navbarButtons">
+        <a href="index.html" class="navbar-button">Home</a>
+        <a href="history.html" class="navbar-button">History of dominickwest222</a>
+        <a href="why.html" class="navbar-button">Why I created this</a>
+    </div>
+
+    <div class="container">
+        <h1>why I created this</h1>
+        <p>why</p>
+        <p>why</p>
+        <p>why</p>
+        <p>why</p>
+        <p>why</p>
+        <p>why</p>
+        <p>why</p>
+        <p>why</p>
+        <p>why</p>
+        <p>why</p>
+        <p>why</p>
+        <p>why</p>
+        <p>why</p>
+        <p>why</p>
+    </div>
+
+    <script>
+function toggleNavbar() {
+    const navbarButtons = document.getElementById('navbarButtons');
+    const mobileMenuButton = document.querySelector('.mobile-menu-button');
+
+    if (navbarButtons.classList.contains('active')) {
+        navbarButtons.classList.remove('active');
+        mobileMenuButton.style.left = '20px'; // Reset position
+    } else {
+        navbarButtons.classList.add('active');
+        mobileMenuButton.style.left = 'calc(20px + 220px)'; // Move it to the right
+    }
+}
+    </script>
+</body>
+</html>
